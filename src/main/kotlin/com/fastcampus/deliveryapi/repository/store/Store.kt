@@ -15,6 +15,7 @@ import java.math.BigDecimal
 @Entity
 @Table(name = "stores", catalog = "food_delivery")
 class Store(
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val storeId: Long,
@@ -64,4 +65,5 @@ class Store(
 
     @Column(name = "minimum_order_price", nullable = false)
     val minimumOrderPrice: BigDecimal,
+
 ): BaseEntity()

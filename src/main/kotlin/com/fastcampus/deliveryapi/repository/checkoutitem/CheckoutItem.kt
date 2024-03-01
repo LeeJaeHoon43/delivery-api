@@ -12,6 +12,7 @@ import java.math.BigDecimal
 @Entity
 @Table(name = "checkout_items", schema = "food_delivery")
 class CheckoutItem(
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "checkout_item_id")
@@ -28,4 +29,5 @@ class CheckoutItem(
 
     @Column(name = "menu_quantity")
     val menuQuantity: Int,
+
 ): BaseEntity()

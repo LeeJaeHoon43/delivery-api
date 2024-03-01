@@ -11,6 +11,7 @@ import jakarta.persistence.Table
 @Entity
 @Table(name = "categories", schema = "food_delivery")
 data class Category(
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "category_id")
@@ -24,4 +25,5 @@ data class Category(
 
     @Column(name = "rank")
     val rank: Int,
+
 ): BaseEntity()

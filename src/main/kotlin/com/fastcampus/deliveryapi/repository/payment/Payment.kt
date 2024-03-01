@@ -16,6 +16,7 @@ import java.math.BigDecimal
 @Entity
 @Table(name = "payments")
 class Payment(
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "payment_id")
@@ -46,4 +47,5 @@ class Payment(
 
     @Column(name = "store_id")
     val storeId: Long,
+
 ): BaseEntity()

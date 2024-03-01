@@ -16,6 +16,7 @@ import java.time.OffsetDateTime
 @Entity
 @Table(name = "discounts")
 data class Discount(
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "discount_id")

@@ -1,6 +1,7 @@
 package com.fastcampus.deliveryapi.repository.menu
 
 import com.fastcampus.deliveryapi.domain.catalog.menu.MenuStatus
+import com.fastcampus.deliveryapi.repository.BaseEntity
 import jakarta.persistence.Column
 import jakarta.persistence.Entity
 import jakarta.persistence.EnumType
@@ -15,6 +16,7 @@ import java.time.OffsetDateTime
 @Entity
 @Table(name = "menus", catalog = "food_delivery")
 class Menu(
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "menuId", nullable = false)
@@ -39,18 +41,4 @@ class Menu(
     @Column(name = "description", nullable = false)
     val description: String,
 
-    @Column(name = "isDeleted", nullable = false)
-    val isDeleted: Boolean = false,
-
-    @Column(name = "createdAt", nullable = false)
-    val createdAt: OffsetDateTime = OffsetDateTime.now(),
-
-    @Column(name = "updatedAt", nullable = false)
-    val updatedAt: OffsetDateTime = OffsetDateTime.now(),
-
-    @Column(name = "createdBy", nullable = false)
-    val createdBy: String,
-
-    @Column(name = "updatedBy", nullable = false)
-    val updatedBy: String,
-)
+): BaseEntity()

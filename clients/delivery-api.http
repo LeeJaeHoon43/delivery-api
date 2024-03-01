@@ -1,1 +1,1 @@
-GET http://localhost:8081/hello?name=Sonic
+GET http://localhost:8081/hello?name=wally

@@ -11,6 +11,7 @@ import jakarta.persistence.Table
 @Entity
 @Table(name = "checkouts")
 data class Checkout(
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "checkout_id", nullable = false)

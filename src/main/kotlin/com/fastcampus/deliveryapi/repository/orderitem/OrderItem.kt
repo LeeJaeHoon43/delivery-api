@@ -12,6 +12,7 @@ import java.math.BigDecimal
 @Entity
 @Table(name = "order_items")
 class OrderItem(
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "order_item_id", nullable = false)
@@ -28,4 +29,5 @@ class OrderItem(
 
     @Column(name = "menu_quantity")
     var menuQuantity: Int,
+
 ): BaseEntity()

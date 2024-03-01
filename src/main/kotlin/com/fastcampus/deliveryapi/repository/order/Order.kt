@@ -15,6 +15,7 @@ import java.math.BigDecimal
 @Entity
 @Table(name = "orders")
 class Order(
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "order_id", nullable = false)
@@ -51,4 +52,4 @@ class Order(
     @Column(name = "customer_id", nullable = false)
     val customerId: Long,
 
-    ): BaseEntity()
+): BaseEntity()

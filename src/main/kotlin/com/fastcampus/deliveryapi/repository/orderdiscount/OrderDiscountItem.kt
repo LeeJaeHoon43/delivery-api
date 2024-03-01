@@ -11,6 +11,7 @@ import java.math.BigDecimal
 @Entity
 @Table(name = "order_discount_items")
 class OrderDiscountItem(
+
     @Id
     @GeneratedValue
     @Column(name = "order_discount_item_id")
@@ -25,4 +26,4 @@ class OrderDiscountItem(
     @Column(name = "discount_amount")
     val discountAmount: BigDecimal
 
-    ): BaseEntity()
+): BaseEntity()

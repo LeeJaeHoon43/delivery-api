@@ -15,6 +15,7 @@ import jakarta.persistence.Table
 @Entity
 @Table(name = "customers", schema = "food_delivery")
 data class Customer(
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "customer_id")

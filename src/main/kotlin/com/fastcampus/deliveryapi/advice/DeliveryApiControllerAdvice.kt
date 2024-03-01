@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestControllerAdvice
 
 @RestControllerAdvice
 class DeliveryApiControllerAdvice {
-
     @ExceptionHandler(value = [
         NullPointerException::class,
         IllegalArgumentException::class,
