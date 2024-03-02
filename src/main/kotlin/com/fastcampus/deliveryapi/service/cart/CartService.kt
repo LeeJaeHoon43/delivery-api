@@ -24,8 +24,7 @@ class CartService(
     }
 
     fun upsert(addCartItem: AddCartItem) {
-        val cartOptional =
-            cartRepository.findAllByCustomerIdAndIsDeleted(addCartItem.customerId, false)
+        val cartOptional = cartRepository.findAllByCustomerIdAndIsDeleted(addCartItem.customerId, false)
         if (cartOptional.isEmpty) {
             val cart = Cart(
                 customerId = addCartItem.customerId,
